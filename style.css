@@ -6,7 +6,7 @@ body {
     
     /* Cabeçalho com fundo roxo e texto centralizado */
     header {
-    background-color: #6a0dad;
+    background-color: #9967bd;
     padding: 10px;
     text-align: center;
     }
@@ -28,7 +28,7 @@ body {
     
     /* Rodapé também roxo e centralizado */
     footer {
-    background-color: #6a0dad;
+    background-color: #9967bd;
     color: white;
     text-align: center;
     padding: 10px;
