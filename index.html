@@ -6,8 +6,8 @@
 <title>Portfólio Escolar</title>
 <link rel="stylesheet" href="style.css">
 <script>
-function mostrarData(data) {
-alert("Data: " + data);
+function mostrarData(id, data) {
+document.getElementById(id).innerText = "Data: " + data;
 }
 </script>
 </head>
@@ -24,33 +24,25 @@ alert("Data: " + data);
 <main>
 <section id="disciplinas">
 <h2 class="titulo">Matemática</h2>
-<div class="secao" onclick="mostrarData('24/05')">Prova 1: Álgebra</div>
-<div class="secao" onclick="mostrarData('12/05')">Relatório: Geometria</div>
-<div class="secao" onclick="mostrarData('05/05')">Exercícios: Estatística</div>
+<div class="secao" onclick="mostrarData('data1', '24/05')">Prova 1: Álgebra</div>
+<div id="data1" class="data"></div>
+<div class="secao" onclick="mostrarData('data2', '12/05')">Relatório: Geometria</div>
+<div id="data2" class="data"></div>
+<div class="secao" onclick="mostrarData('data3', '05/05')">Exercícios: Estatística</div>
+<div id="data3" class="data"></div>
 
 <h2 class="titulo">Física</h2>
-<div class="secao" onclick="mostrarData('15/05')">Prova: Cinemática</div>
-<div class="secao" onclick="mostrarData('10/06')">Relatório: Termodinâmica</div>
-<div class="secao" onclick="mostrarData('22/06')">Exercícios: Eletricidade</div>
+<div class="secao" onclick="mostrarData('data4', '15/05')">Prova: Cinemática</div>
+<div id="data4" class="data"></div>
+<div class="secao" onclick="mostrarData('data5', '10/06')">Relatório: Termodinâmica</div>
+<div id="data5" class="data"></div>
+<div class="secao" onclick="mostrarData('data6', '22/06')">Exercícios: Eletricidade</div>
+<div id="data6" class="data"></div>
 
 <h2 class="titulo">Português</h2>
-<div class="secao" onclick="mostrarData('18/05')">Prova: Interpretação de Texto</div>
-<div class="secao" onclick="mostrarData('08/05')">Relatório: Análise Literária</div>
-<div class="secao" onclick="mostrarData('25/05')">Exercícios: Gramática</div>
-</section>
-
-<section id="atividades">
-<h2>Outras Atividades</h2>
-<ul>
-<li><a href="pagina1.html" target="_blank">Trabalho em grupo</a></li>
-<li><a href="pagina2.html" target="_blank">Apresentações</a></li>
-<li><a href="pagina3.html" target="_blank">Projetos especiais</a></li>
-</ul>
-</section>
-</main>
-
-<footer>
-<p>Criado por Giovanna, Leticia e Natalia.</p>
-</footer>
-</body>
-</html>
+<div class="secao" onclick="mostrarData('data7', '18/05')">Prova: Interpretação de Texto</div>
+<div id="data7" class="data"></div>
+<div class="secao" onclick="mostrarData('data8', '08/05')">Relatório: Análise Literária</div>
+<div id="data8" class="data"></div>
+<div class="secao" onclick="mostrarData('data9', '25/05')">Exercícios: Gramática</div>
+<div id="data9" class="data"></div>
